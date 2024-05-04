@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test/*.js --timeout 5000",
+    "auth": "mocha ./test/login.js --timeout 5000",
+    "booking": "mocha ./test/booking.js --timeout 5000"
   },
   "author": "sabrinadizam21",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^5.1.0",
+    "chai": "^4.2.0",
+    "chai-json-schema": "^1.5.1",
     "mocha": "^10.4.0",
     "supertest": "^7.0.0"
   }
